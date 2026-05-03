@@ -15,9 +15,7 @@ const NotFound = () => {
 		<div className='not-found'>
 			<h1>Ooops...</h1>
 			<h2>That page cannot be found.</h2>
-			<Link legacyBehavior href='/'>
-				<a>Homepage</a>
-			</Link>
+			<Link href='/'>Homepage</Link>
 		</div>
 	);
 };
