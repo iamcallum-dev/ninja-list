@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Ninja List | About",
+	keywords: ["ninjas"],
+};
+
 const About = () => {
 	return (
 		<div>

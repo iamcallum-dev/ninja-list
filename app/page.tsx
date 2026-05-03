@@ -1,5 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import styles from "./Home.module.css";
+
+export const metadata: Metadata = {
+	title: "Ninja List | Home",
+	keywords: ["ninjas"],
+};
 
 export default function Home() {
 	return (
