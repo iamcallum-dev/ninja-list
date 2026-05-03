@@ -1,5 +1,3 @@
-import layout from "../app/layout";
-
 const About = () => {
 	return (
 		<div>
