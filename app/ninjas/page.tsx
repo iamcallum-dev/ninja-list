@@ -1,4 +1,5 @@
 import styles from "../Ninjas.module.css";
+import Link from "next/link";
 
 interface Ninja {
 	id: number;
@@ -14,11 +15,11 @@ const Ninjas = async () => {
 		<div>
 			<h1>All Ninjas</h1>
 			{ninjas.map((ninja) => (
-				<div key={ninja.id}>
+				<Link legacyBehavior key={ninja.id} href={`/ninjas/${ninja.id}`}>
 					<a className={styles.single}>
 						<h3>{ninja.name}</h3>
 					</a>
-				</div>
+				</Link>
 			))}
 		</div>
 	);
