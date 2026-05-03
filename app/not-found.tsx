@@ -1,13 +1,14 @@
+"use client";
+
 import Link from "next/link";
-import { use, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 const NotFound = () => {
-	const router = useRouter();
 	useEffect(() => {
-		setTimeout(() => {
-			router.push("/");
+		const timer = setTimeout(() => {
+			window.location.replace("/");
 		}, 3000);
+		return () => clearTimeout(timer);
 	}, []);
 
 	return (
